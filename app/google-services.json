@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "741479860362",
+    "firebase_url": "https://blooper-38a12.firebaseio.com",
+    "project_id": "blooper-38a12",
+    "storage_bucket": "blooper-38a12.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741479860362:android:72a29fabc9c66652ee8573",
+        "android_client_info": {
+          "package_name": "com.rejointech.blooper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "741479860362-35upgvdehp6o70gfhc5m0tvsv2ovpd21.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rejointech.blooper",
+            "certificate_hash": "8b933b2eda42ea92dc212872637637c3837929ab"
+          }
+        },
+        {
+          "client_id": "741479860362-f22e1d6p2kt5s2g642s3992tm3k3vuig.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgarAABgTBP8PgBtT19DvAuDGAlWaF2Os"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "741479860362-f22e1d6p2kt5s2g642s3992tm3k3vuig.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

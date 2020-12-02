@@ -1,0 +1,40 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="themeoptional" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="toolbar" parent="Theme.MaterialComponents">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#C9C1D5</item>
+        <item name="colorPrimaryDark">#9B8EBA</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="MyCardView" parent="@style/shapeAppearanceOverlay.MaterialCardView.Cut">
+        <item name="shapeAppearanceOverlay">@style/shapeAppearanceOverlay.MaterialCardView.Cut</item>
+    </style>
+
+    <style name="shapeAppearanceOverlay.MaterialCardView.Cut" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">10dp</item>
+        <item name="cornerSizeTopLeft">10dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+
+</resources>

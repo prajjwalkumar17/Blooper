@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.signinFrag">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@color/orange_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/background_transparent"
+            android:drawableStart="@drawable/arowfrwdcut"
+            android:drawableTint="@color/black"
+            android:fontFamily="@font/baloo"
+            android:text="Demo"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/floatingActionButton2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline3"
+            app:layout_constraintVertical_bias="0.3" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:src="@drawable/google"
+            android:tint="@color/blue_800"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/floatingActionButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button2"
+            app:layout_constraintTop_toTopOf="@+id/guideline3"
+            app:layout_constraintVertical_bias="0.3" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:src="@drawable/facebook"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/floatingActionButton3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/floatingActionButton2"
+            app:layout_constraintTop_toTopOf="@+id/guideline3"
+            app:layout_constraintVertical_bias="0.3" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:src="@drawable/github"
+            android:tint="@color/blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/floatingActionButton"
+            app:layout_constraintTop_toTopOf="@+id/guideline3"
+            app:layout_constraintVertical_bias="0.3" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="43dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="24dp"
+            android:fillViewport="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="377dp"
+                    android:layout_height="0dp"
+                    app:cardBackgroundColor="@color/blue_800"
+                    app:cardCornerRadius="50dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/account"
+                            android:layout_width="330dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/background_transparent"
+                            android:hint="An email Id for verification"
+                            app:hintTextColor="@color/orange_500"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:boxStrokeColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.094">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textEmailAddress"
+                                android:drawableEnd="@drawable/ic_baseline_person_24"
+                                android:drawableTint="@color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/passwordtt"
+                            android:layout_width="330dp"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="32dp"
+                            android:background="@drawable/background_transparent"
+                            android:hint="Min 6 characters "
+                            app:counterMaxLength="12"
+                            app:boxStrokeColor="@color/black"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintStart_toStartOf="@+id/account"
+                            app:layout_constraintTop_toBottomOf="@+id/account"
+                            app:passwordToggleTint="@color/black"
+                            app:passwordToggleEnabled="true">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPassword"
+                                android:minEms="6" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/loginBot"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bot1"
+                            android:elevation="20dp"
+                            android:text="Login"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="@+id/passwordtt"
+                            app:layout_constraintTop_toBottomOf="@+id/passwordtt"
+                            app:layout_constraintVertical_bias="0.3" />
+
+
+                        <Button
+                            android:id="@+id/usePhonebot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_transparent"
+                            android:text="use Phone instead"
+                            android:textColor="#0B403B"
+                            app:layout_constraintBottom_toTopOf="@+id/loginBot"
+                            app:layout_constraintEnd_toStartOf="@+id/forgotPassBot"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintStart_toStartOf="@+id/passwordtt"
+                            app:layout_constraintTop_toBottomOf="@+id/passwordtt"
+                            app:layout_constraintVertical_bias="0.123" />
+
+                        <Button
+                            android:id="@+id/forgotPassBot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_transparent"
+                            android:text="Forgot Password"
+                            android:textColor="#0B403B"
+                            app:layout_constraintBottom_toTopOf="@+id/loginBot"
+                            app:layout_constraintEnd_toEndOf="@+id/passwordtt"
+                            app:layout_constraintTop_toBottomOf="@+id/passwordtt"
+                            app:layout_constraintVertical_bias="0.123" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:src="@color/peach"
+                    android:elevation="2dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:elevation="20dp"
+                    android:backgroundTint="@color/peach"
+                    app:cardCornerRadius="40dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:elevation="1dp"
+                        android:foregroundGravity="center">
+
+
+                        <Button
+                            android:id="@+id/signUpbot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_transparent"
+                            android:fontFamily="@font/alegreya_black_italic"
+                            android:text="Sign up"
+                            android:elevation="5dp"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="@+id/upArrow1"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/upArrow1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:elevation="5dp"
+                            android:src="@drawable/uparrow"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/signUpbot"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="@+id/upArrow2"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:tint="@color/black" />
+
+                        <ImageView
+                            android:id="@+id/upArrow2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:elevation="5dp"
+                            android:src="@drawable/uparrow"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/upArrow1"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="@+id/upArrow3"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:tint="@color/black" />
+
+                        <ImageView
+                            android:id="@+id/upArrow3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:elevation="5dp"
+                            app:tint="@color/black"
+                            android:src="@drawable/uparrow"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/upArrow2"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintHorizontal_chainStyle="packed"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                      />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+

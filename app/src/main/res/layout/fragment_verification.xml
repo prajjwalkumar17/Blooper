@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.verificationFrag">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/verificationbacke"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="35dp" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:backgroundTint="#8484FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline4">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toTopOf="@+id/cardView4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout2">
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/phone"
+                app:layout_constraintBottom_toTopOf="@+id/phoneNo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/black" />
+            <TextView
+                android:id="@+id/phoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/baloo"
+                android:padding="5dp"
+                android:text="+9031446811"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/phoneVerBot"
+                app:layout_constraintTop_toBottomOf="@+id/imageView11"
+                tools:layout_editor_absoluteX="0dp"
+                />
+            <LinearLayout
+                android:id="@+id/phone_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/phoneVerBot"
+                app:layout_constraintTop_toBottomOf="@+id/imageView11"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/countryCodePicker"
+                        android:layout_width="140dp"
+                        android:visibility="invisible"
+                        android:layout_height="40dp"
+                        android:background="@drawable/background_transparent"
+                        app:ccp_autoDetectCountry="true"
+                        app:ccp_showNameCode="true"
+                        app:ccp_textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/phone"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_transparent"
+                        android:hint="Phone"
+                        android:visibility="invisible"
+                        app:boxStrokeColor="@color/black"
+                        app:errorTextColor="@color/black"
+                        app:helperText="Check for OTP"
+                        app:helperTextEnabled="true"
+                        app:helperTextTextColor="@color/black"
+                        app:hintTextColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/phoneedit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableEnd="@drawable/phone"
+                            android:drawableTint="@color/black"
+                            android:inputType="phone" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/phoneVerBot"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botbackoutline"
+                android:text="Verify using Phone"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phoneNo"
+                tools:layout_editor_absoluteX="-16dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="1">
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/black" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:focusedByDefault="false"
+            android:hint="Add a Valid Email Address"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            app:hintTextColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView12">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/emailverifyBot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botbackoutline"
+            android:padding="10dp"
+            android:text="Verify"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+        <Button
+            android:id="@+id/SignUpAgain1212"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_transparent"
+            android:fontFamily="@font/baloo"
+            android:text="SignUp again"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailverifyBot" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/rough11"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="22sp"
+        android:elevation="40dp"
+        android:textColor="@color/black"
+        android:text="opopopopo"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

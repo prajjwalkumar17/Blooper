@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/searcho"
+        android:icon="@drawable/search_white"
+        android:title="Search"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/message"
+        android:icon="@drawable/ic_baseline_send_24"
+        android:title="Search"
+        app:showAsAction="always"/>
+    <item android:id="@+id/messagewww"
+        android:icon="@drawable/ic_baseline_send_24"
+        android:title="Search"
+       />
+
+</menu>

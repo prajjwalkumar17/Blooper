@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.profile">
+
+
+    <RelativeLayout
+        android:theme="@style/themeoptional"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <View
+            android:id="@+id/trans"
+            android:layout_width="match_parent"
+            android:background="@drawable/background_transparent"
+            android:layout_height="50dp"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/trans"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_toEndOf="@+id/proPic"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1000"
+                                android:textColor="#000"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Posts"
+                                android:textColor="#000"
+                                android:textSize="15sp"
+                                android:textStyle="italic" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/blue_900" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1000"
+                                android:textColor="#000"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Posts"
+                                android:textColor="#000"
+                                android:textSize="15sp"
+                                android:textStyle="italic" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/blue_900" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1000"
+                                android:textColor="#000"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Posts"
+                                android:textColor="#000"
+                                android:textSize="15sp"
+                                android:textStyle="italic" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/proPic"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="26dp"
+                        android:src="@drawable/pic5" />
+
+                    <TextView
+                        android:id="@+id/title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/proPic"
+                        android:layout_marginTop="30dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:text="@string/title"
+                        android:textColor="#000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/desc"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title1"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/long_desc"
+                        android:textColor="#454040"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/editProfileBot"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_below="@id/desc"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/nullbot"
+                        android:text="Edit Profile"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/editProfileBot"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="9dp"
+                        android:background="@color/black" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/view">
+
+                        <LinearLayout
+                            android:id="@+id/lin2"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="40dp"
+                                style="?android:attr/buttonBarButtonStyle"
+                                android:layout_marginEnd="40dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/ic_baseline_dashboard_24"
+                                android:backgroundTint="#000" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="40dp"
+                                style="?android:attr/buttonBarButtonStyle"
+                                android:layout_marginEnd="40dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/ic_baseline_settings_24"
+                                android:backgroundTint="#000" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="40dp"
+                                android:layout_marginEnd="40dp"
+                                style="?android:attr/buttonBarButtonStyle"
+                                android:layout_weight="1"
+                                android:background="@drawable/ic_baseline_save_24"
+                                android:backgroundTint="#000" />
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_below="@+id/lin2"
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginEnd="9dp"
+                            android:background="@color/blue_900" />
+
+                    </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+</FrameLayout>

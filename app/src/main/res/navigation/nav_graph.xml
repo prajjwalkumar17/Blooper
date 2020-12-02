@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboard">
+
+    <fragment
+        android:id="@+id/videos"
+        android:name="com.rejointech.blooper.Fragments.videos"
+        android:label="fragment_videos"
+        tools:layout="@layout/fragment_videos" >
+        <action
+            android:id="@+id/action_videos_to_settingsFrag"
+            app:destination="@id/settings" />
+    </fragment>
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.rejointech.blooper.Fragments.settingsFrag"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/dashboard"
+        android:name="com.rejointech.blooper.Fragments.dashboardFrag"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFrag_to_videos"
+            app:destination="@id/videos" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_profile2"
+            app:destination="@id/profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.rejointech.blooper.Fragments.profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

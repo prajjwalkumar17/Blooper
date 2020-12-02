@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@id/dashboard"
+            android:icon="@drawable/ic_baseline_dashboard_24"
+            android:menuCategory="secondary"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/search"
+            android:icon="@drawable/ic_baseline_search_24"
+            android:menuCategory="secondary"
+            android:title="Search" />
+
+        <item
+            android:id="@+id/saved"
+            android:menuCategory="secondary"
+            android:icon="@drawable/ic_baseline_save_24"
+            android:title="Saved" />
+
+        <item
+            android:id="@id/profile"
+            android:icon="@drawable/ic_baseline_emoji_people_24"
+            android:menuCategory="secondary"
+            android:title="Profile" />
+        <item
+            android:id="@+id/discoverPeople"
+            android:menuCategory="secondary"
+            android:icon="@drawable/discoverpeople"
+            android:title="Discover People" />
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_baseline_build_24"
+            android:menuCategory="secondary"
+            android:title="Settings" />
+
+
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="Configure"
+            android:menuCategory="secondary">
+            <menu>
+
+                <item
+                    android:id="@+id/notifications"
+                    android:icon="@drawable/ic_baseline_notifications_active_24"
+                    android:title="Notifications" />
+
+                <item
+                    android:id="@+id/darkMode"
+                    android:icon="@drawable/moon"
+                    app:showAsAction="always"
+                    android:checkable="true"
+                    android:title="DarkMode" />
+
+
+
+            </menu>
+        </item>
+    </group>
+
+
+    <item android:title="Communicate"
+        android:menuCategory="secondary">
+        <menu>
+            <item
+                android:id="@+id/Aboutus"
+                android:icon="@drawable/ic_baseline_file_copy_24"
+                android:title="About Blooper" />
+            <item
+                android:id="@+id/parentalGuide"
+                android:icon="@drawable/ic_baseline_help_outline_24"
+                android:title="Parental gide" />
+            <item
+                android:id="@+id/Feedback"
+                android:icon="@drawable/ic_baseline_feedback_24"
+                android:title="Help and feedback" />
+            <item
+                android:id="@+id/profiley"
+                android:icon="@drawable/ic_baseline_create_24"
+                android:title="Write us" />
+            <item
+                android:id="@+id/redeemCode"
+                android:icon="@drawable/ic_baseline_euro_24"
+                android:title="Redeem Code" />
+        </menu>
+    </item>
+
+</menu>

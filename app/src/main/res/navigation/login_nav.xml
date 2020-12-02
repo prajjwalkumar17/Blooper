@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_nav"
+    app:startDestination="@id/signinFrag">
+
+    <fragment
+        android:id="@+id/signinFrag"
+        android:name="com.rejointech.blooper.login.signinFrag"
+        android:label="fragment_signin"
+        tools:layout="@layout/fragment_signin" >
+        <action
+            android:id="@+id/action_signinFrag_to_signupFrag"
+            app:destination="@id/signupFrag"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/signinFrag"/>
+        <action
+            android:id="@+id/action_signinFrag_to_phoneLoginFrag"
+            app:destination="@id/phoneLoginFrag" />
+        <action
+            android:id="@+id/action_signinFrag_to_forgottenPasswordFrag"
+            app:destination="@id/forgottenPasswordFrag" />
+        <action
+            android:id="@+id/action_signinFrag_to_phoneVerFrag"
+            app:destination="@id/verificationFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupFrag"
+        android:name="com.rejointech.blooper.login.signupFrag"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup">
+
+        <action
+            android:id="@+id/action_signupFrag_to_signinFrag"
+            app:destination="@id/signinFrag"
+            app:popUpTo="@id/signupFrag"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_signupFrag_to_phoneVerFrag"
+            app:destination="@id/verificationFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/phoneLoginFrag"
+        android:name="com.rejointech.blooper.login.phoneLoginFrag"
+        android:label="fragment_phone_login"
+        tools:layout="@layout/fragment_phone_login" />
+    <fragment
+        android:id="@+id/phoneVerFrag"
+        android:name="com.rejointech.blooper.login.phoneVerFrag"
+        android:label="fragment_phone_ver"
+        tools:layout="@layout/fragment_phone_ver" />
+    <fragment
+        android:id="@+id/accountVerFrag"
+        android:name="com.rejointech.blooper.login.accountVerFrag"
+        android:label="fragment_account_ver"
+        tools:layout="@layout/fragment_account_ver" />
+    <fragment
+        android:id="@+id/forgottenPasswordFrag"
+        android:name="com.rejointech.blooper.login.forgottenPasswordFrag"
+        android:label="fragment_forgotten_password"
+        tools:layout="@layout/fragment_forgotten_password" />
+    <fragment
+        android:id="@+id/verificationFrag"
+        android:name="com.rejointech.blooper.login.verificationFrag"
+        android:label="fragment_verification"
+        tools:layout="@layout/fragment_verification" >
+        <action
+            android:id="@+id/action_verificationFrag_to_phoneVerFrag"
+            app:destination="@id/phoneVerFrag" />
+        <action
+            android:id="@+id/action_verificationFrag_to_accountVerFrag"
+            app:destination="@id/accountVerFrag" />
+        <action
+            android:id="@+id/action_verificationFrag_to_signupFrag"
+            app:destination="@id/signupFrag"
+            />
+    </fragment>
+</navigation>
