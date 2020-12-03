@@ -49,23 +49,23 @@ public class signinFrag extends Fragment {
     private int guh = 2;
     TextInputLayout account, passwordtt;
     private Button signUpbot, usePhonebot, loginBot;
-    private FirebaseAuth auth;
-    private DatabaseReference database;
     private static String NO_USERNAME_NOW = "noName";
     private static final String NO_PHOTO_URI = "nopic";
     private static String NO_PHONE = "willbeadd";
     private SharedPreferences pref, pref1;
     private SharedPreferences.Editor editor, editor1;
-    private FloatingActionButton floatingActionButton2;
+    private FirebaseAuth auth;
+    private DatabaseReference database;
     Login_Cred login_cred, login_cred1;
     private GoogleSignInClient mGoogleSignInClient;
+    private FloatingActionButton floatingActionButton2;
     static String name, tokenUID, photoUri, accounttrt, id;
 
     @Override
     public void onStart() {
         super.onStart();
-        FirebaseUser user=auth.getCurrentUser();
-        if(user!=null){
+        FirebaseUser user = auth.getCurrentUser();
+        if (user != null) {
             Navigation.findNavController(root).navigate(R.id.action_signinFrag_to_phoneVerFrag);
         }
     }

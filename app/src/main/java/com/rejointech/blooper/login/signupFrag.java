@@ -52,6 +52,7 @@ import com.rejointech.blooper.R;
 import com.rejointech.blooper.model.Login_Cred;
 
 import java.util.Arrays;
+import java.util.Objects;
 
 
 public class signupFrag extends Fragment {
@@ -282,7 +283,7 @@ public class signupFrag extends Fragment {
         login_cred.setPicUri(NO_PHOTO_URI);
         database
                 .child("User_cred")
-                .child(auth.getUid())
+                .child(Objects.requireNonNull(auth.getUid()))
                 .child("Permanent_cred")
                 .setValue(login_cred)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
