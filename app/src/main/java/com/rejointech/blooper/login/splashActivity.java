@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.navigation.Navigation;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
@@ -20,26 +21,41 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.rejointech.blooper.MainActivity;
 import com.rejointech.blooper.R;
 
 public class splashActivity extends AppCompatActivity {
-    Animation fade,move,away;
+    Animation fade, move, away;
     TextView textView;
     LottieAnimationView lottie;
-    ImageView bloopImage,splashback;
+    ImageView bloopImage, splashback;
     ProgressBar splashProgress;
-    private static final int NUM_PAGES=2;
+    private static final int NUM_PAGES = 2;
     private ViewPager viewPager;
     private splashPagerAdapter splashPagerAdapter;
     private SharedPreferences sharedPreferences;
-    private static int SPLASH_TIME_OUT =4100;
+    private static int SPLASH_TIME_OUT = 4100;
+    private FirebaseAuth auth;
+
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        FirebaseUser user = auth.getCurrentUser();
+        if (user != null) {
+            startActivity(new Intent(getApplicationContext(), SigninMethodsHolder.class));
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash);
         viewPager = findViewById(R.id.pager);
+        auth = FirebaseAuth.getInstance();
         splashPagerAdapter = new splashPagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(splashPagerAdapter);
         textView = findViewById(R.id.textView);
