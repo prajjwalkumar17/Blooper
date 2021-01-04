@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements navCotroller.draw
    DrawerLayout drawer_layout;
     NavigationView nav_view;
     View tool;
+    int uiui;
     BottomNavigationView botnav;
     ImageView imageView2;
     Animation rotate;
