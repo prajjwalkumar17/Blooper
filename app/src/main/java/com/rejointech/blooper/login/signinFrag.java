@@ -183,6 +183,8 @@ public class signinFrag extends Fragment {
         editor.putString("picLogin", login_cred.getPicUri());
         editor.putString("usernameLogin", login_cred.getUsername());
         editor.putString("uidLogin", login_cred.getUid());
+
+
         editor.apply();
     }
 
