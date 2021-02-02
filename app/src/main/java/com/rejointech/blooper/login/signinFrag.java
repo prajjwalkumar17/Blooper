@@ -200,6 +200,7 @@ public class signinFrag extends Fragment {
     }
 
     private void googleSignUp(int code) {
+
         Intent signInIntent = this.mGoogleSignInClient.getSignInIntent();
         startActivityForResult(signInIntent, code);
     }
