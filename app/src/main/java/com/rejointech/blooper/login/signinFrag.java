@@ -61,6 +61,7 @@ public class signinFrag extends Fragment {
     Login_Cred login_cred, login_cred1;
 
     private GoogleSignInClient mGoogleSignInClient;
+
     private FloatingActionButton floatingActionButton2;
     static String name, tokenUID, photoUri, accounttrt, id;
 
