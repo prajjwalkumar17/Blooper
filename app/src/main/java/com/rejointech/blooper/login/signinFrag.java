@@ -71,6 +71,7 @@ public class signinFrag extends Fragment {
         super.onStart();
         FirebaseUser user = auth.getCurrentUser();
         if (user != null) {
+
             Navigation.findNavController(root).navigate(R.id.action_signinFrag_to_phoneVerFrag);
         }
     }
