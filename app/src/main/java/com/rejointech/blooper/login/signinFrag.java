@@ -58,6 +58,7 @@ public class signinFrag extends Fragment {
     private SharedPreferences.Editor editor, editor1;
     private FirebaseAuth auth;
     private DatabaseReference database;
+
     Login_Cred login_cred, login_cred1;
 
     private GoogleSignInClient mGoogleSignInClient;
