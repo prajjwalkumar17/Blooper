@@ -86,6 +86,7 @@ public class signinFrag extends Fragment {
 
 //TODO: all muticals::::::::::::::::::::::::::::::::::::::::::::::::::::::::
         muticals();
+        Toast.makeText(getContext(), "helooo", Toast.LENGTH_SHORT).show();
 
 //TODO all variables:::::::::::::::::::::::::::::::::::::::::::::::::::::
 
