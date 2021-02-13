@@ -131,7 +131,9 @@ public class signinFrag extends Fragment {
             signUpbot = root.findViewById(R.id.signUpbot);
             usePhonebot = root.findViewById(R.id.usePhonebot);
             account = root.findViewById(R.id.account);
-            passwordtt = root.findViewById(R.id.passwordtt);
+
+
+        passwordtt = root.findViewById(R.id.passwordtt);
 
 
         loginBot = root.findViewById(R.id.loginBot);
