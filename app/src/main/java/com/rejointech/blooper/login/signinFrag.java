@@ -132,7 +132,9 @@ public class signinFrag extends Fragment {
             usePhonebot = root.findViewById(R.id.usePhonebot);
             account = root.findViewById(R.id.account);
             passwordtt = root.findViewById(R.id.passwordtt);
-            loginBot = root.findViewById(R.id.loginBot);
+
+
+        loginBot = root.findViewById(R.id.loginBot);
             floatingActionButton2 = root.findViewById(R.id.floatingActionButton2);
             auth = FirebaseAuth.getInstance();
             database = FirebaseDatabase.getInstance().getReference("Profile");
