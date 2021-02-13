@@ -104,6 +104,7 @@ public class signinFrag extends Fragment {
         signUpbot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Navigation.findNavController(root).navigate(R.id.action_signinFrag_to_signupFrag);
             }
         });
