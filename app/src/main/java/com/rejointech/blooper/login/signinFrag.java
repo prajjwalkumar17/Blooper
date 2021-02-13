@@ -137,7 +137,9 @@ public class signinFrag extends Fragment {
         loginBot = root.findViewById(R.id.loginBot);
             floatingActionButton2 = root.findViewById(R.id.floatingActionButton2);
             auth = FirebaseAuth.getInstance();
-            database = FirebaseDatabase.getInstance().getReference("Profile");
+
+
+        database = FirebaseDatabase.getInstance().getReference("Profile");
             login_cred = new Login_Cred();
         }
 
