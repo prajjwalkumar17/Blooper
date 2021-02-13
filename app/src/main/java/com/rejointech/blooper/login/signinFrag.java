@@ -97,6 +97,7 @@ public class signinFrag extends Fragment {
             @Override
             public void onClick(View view) {
                 googleChooser();
+
                 googleSignUp(guh);
             }
         });
