@@ -49,6 +49,7 @@ public class signinFrag extends Fragment {
     private int guh = 2;
     TextInputLayout account, passwordtt;
     private Button signUpbot, usePhonebot, loginBot;
+
     private static String NO_USERNAME_NOW = "noName";
     private static final String NO_PHOTO_URI = "nopic";
 
