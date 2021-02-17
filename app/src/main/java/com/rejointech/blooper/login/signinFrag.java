@@ -56,6 +56,7 @@ public class signinFrag extends Fragment {
 
     private SharedPreferences pref, pref1;
     private SharedPreferences.Editor editor, editor1;
+
     private FirebaseAuth auth;
     private DatabaseReference database;
 
@@ -138,6 +139,7 @@ public class signinFrag extends Fragment {
 
 
         loginBot = root.findViewById(R.id.loginBot);
+
         floatingActionButton2 = root.findViewById(R.id.floatingActionButton2);
         auth = FirebaseAuth.getInstance();
 
