@@ -67,6 +67,7 @@ public class signinFrag extends Fragment {
     private GoogleSignInClient mGoogleSignInClient;
 
     private FloatingActionButton floatingActionButton2;
+
     static String name, tokenUID, photoUri, accounttrt, id;
 
     @Override
