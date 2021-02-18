@@ -51,6 +51,7 @@ public class signinFrag extends Fragment {
     private Button signUpbot, usePhonebot, loginBot;
 
     private static String NO_USERNAME_NOW = "noName";
+
     private static final String NO_PHOTO_URI = "nopic";
 
     private static String NO_PHONE = "willbeadd";
