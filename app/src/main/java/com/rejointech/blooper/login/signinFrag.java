@@ -116,6 +116,7 @@ public class signinFrag extends Fragment {
         usePhonebot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Navigation.findNavController(root).navigate(R.id.action_signinFrag_to_phoneLoginFrag);
             }
         });
