@@ -123,6 +123,7 @@ public class signinFrag extends Fragment {
         loginBot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 signin(account.getEditText().getText().toString(), passwordtt.getEditText().getText().toString());
             }
         });
