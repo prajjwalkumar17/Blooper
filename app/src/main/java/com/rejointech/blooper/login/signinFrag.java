@@ -184,6 +184,7 @@ public class signinFrag extends Fragment {
                             Toast.makeText(getContext(), "pottyyyykrlon frandzzzzzz", Toast.LENGTH_SHORT).show();
                             login_cred = snapshot.getValue(Login_Cred.class);
                             addDataTosharedPref();
+
                             Navigation.findNavController(root).navigate(R.id.action_signinFrag_to_phoneVerFrag);
 
                         }
