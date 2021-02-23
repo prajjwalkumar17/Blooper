@@ -176,6 +176,7 @@ public class signinFrag extends Fragment {
                 .child("User_cred")
                 .child(auth.getUid())
                 .child("Permanent_cred")
+
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
