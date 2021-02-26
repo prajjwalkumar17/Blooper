@@ -210,6 +210,7 @@ public class signinFrag extends Fragment {
         editor.putString("phoneLogin", login_cred.getPhone());
 
         editor.putString("picLogin", login_cred.getPicUri());
+
         editor.putString("usernameLogin", login_cred.getUsername());
         editor.putString("uidLogin", login_cred.getUid());
 
