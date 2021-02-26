@@ -202,6 +202,8 @@ public class signinFrag extends Fragment {
         pref = getActivity().getSharedPreferences("loginSaves", Context.MODE_PRIVATE);
         editor = pref.edit();
         editor.putString("accountLogin", account.getEditText().getText().toString());
+
+
         editor.putString("passwordLogin", passwordtt.getEditText().getText().toString());
         editor.putString("nameLogin", login_cred.getName());
 
