@@ -272,6 +272,7 @@ public class signinFrag extends Fragment {
                     FirebaseUser user = auth.getCurrentUser();
 
                     Navigation.findNavController(root).navigate(R.id.action_signinFrag_to_phoneVerFrag);
+
                     addDataToPrefGOOGLE(name, tokenUID, accounttrt, NO_PHONE);
                 } else {
                     // If sign in fails, display a message to the user.
