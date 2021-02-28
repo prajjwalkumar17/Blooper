@@ -290,6 +290,7 @@ public class signinFrag extends Fragment {
         pref1 = getActivity().getSharedPreferences("GOOGLEloginSaves", Context.MODE_PRIVATE);
         editor1 = pref1.edit();
         editor1.putString("GOOGLEnamePref", name);
+
         editor1.putString("GOOGLEphonePref", Phone);
         editor1.putString("GOOGLEuidPref", tokenUID);
         editor1.putString("GOOGLEemailPref", accountt);
