@@ -295,6 +295,7 @@ public class signinFrag extends Fragment {
 
         editor1.putString("GOOGLEphonePref", Phone);
         editor1.putString("GOOGLEuidPref", tokenUID);
+
         editor1.putString("GOOGLEemailPref", accountt);
         editor1.apply();
     }
