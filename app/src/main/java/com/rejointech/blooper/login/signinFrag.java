@@ -80,6 +80,7 @@ public class signinFrag extends Fragment {
         if (user != null) {
 
             Navigation.findNavController(root).navigate(R.id.action_signinFrag_to_phoneVerFrag);
+            Navigation.findNavController(root).navigate(R.id.action_signinFrag_to_phoneVerFrag);
         }
     }
 
